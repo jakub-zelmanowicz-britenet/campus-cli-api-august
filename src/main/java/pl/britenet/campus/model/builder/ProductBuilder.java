@@ -1,5 +1,6 @@
 package pl.britenet.campus.model.builder;
 
+import pl.britenet.campus.model.Category;
 import pl.britenet.campus.model.Product;
 
 public final class ProductBuilder {
@@ -17,6 +18,11 @@ public final class ProductBuilder {
 
     public ProductBuilder setCategoryId(int categoryId) {
         this.product.setCategoryId(categoryId);
+        return this;
+    }
+
+    public ProductBuilder setCategory(Category category) {
+        this.product.setCategory(category);
         return this;
     }
 

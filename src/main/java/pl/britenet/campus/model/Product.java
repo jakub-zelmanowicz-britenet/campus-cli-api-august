@@ -3,6 +3,7 @@ package pl.britenet.campus.model;
 public final class Product {
     private int id;
     private int categoryId;
+    private Category category;
     private String name;
     private double price;
 
@@ -22,6 +23,14 @@ public final class Product {
 
     public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     public String getName() {
